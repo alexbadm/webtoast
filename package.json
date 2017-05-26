@@ -10,7 +10,7 @@
         "type": "git",
         "url": "git+https://github.com/a-lotus/webtoast.git"
     },
-    "keywords": [],
+    "keywords": ["web", "toast", "UI"],
     "author": "a-lotus",
     "license": "ISC",
     "bugs": {
