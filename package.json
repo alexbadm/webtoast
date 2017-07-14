@@ -1,6 +1,6 @@
 {
     "name": "webtoast",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "A lightweight library for displaying short messages in the browser",
     "main": "index.js",
     "scripts": {

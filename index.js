@@ -36,24 +36,28 @@ export default class WebToast {
         window.document.body.appendChild(this.el)
       })
     }
+
+    return this
   }
 
   setClass (classname) {
     this._unsetDefaultStylistic()
     this.el.className = classname
+    return this
   }
 
   show (text, length) {
     clearTimeout(this.currentTimeoutId)
     this.currentTimeoutId = setTimeout(this._showHide(text), lengthValues[length] || lengthValues[SHORT])
+    return this
   }
 
   showLong (text) {
-    this.show(text, LONG)
+    return this.show(text, LONG)
   }
 
   showShort (text) {
-    this.show(text, SHORT)
+    return this.show(text, SHORT)
   }
 
   _showHide (text) {
@@ -67,6 +71,7 @@ export default class WebToast {
   hide () {
     this.el.style.opacity = '0'
     this.currentTimeoutId = setTimeout(this._moveOut, transitionDuration)
+    return this
   }
 
   _moveOut () {
@@ -90,11 +95,31 @@ export default class WebToast {
     this.el.style.boxShadow = ''
     this.el.style.transition = ''
   }
+
+  get LONG () {
+    return LONG
+  }
+
+  get SHORT () {
+    return SHORT
+  }
+
+  get BOTTOM () {
+    return BOTTOM
+  }
+
+  get CENTER () {
+    return CENTER
+  }
+
+  get TOP () {
+    return TOP
+  }
 }
 
-WebToast.SHORT = SHORT
 WebToast.LONG = LONG
+WebToast.SHORT = SHORT
 
-WebToast.TOP = TOP
-WebToast.CENTER = CENTER
 WebToast.BOTTOM = BOTTOM
+WebToast.CENTER = CENTER
+WebToast.TOP = TOP
