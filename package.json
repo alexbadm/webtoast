@@ -3,18 +3,15 @@
     "version": "1.1.0",
     "description": "A lightweight library for displaying short messages in the browser",
     "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/a-lotus/webtoast.git"
+        "url": "git+https://github.com/alexbadm/webtoast.git"
     },
     "keywords": ["web", "toast", "UI"],
-    "author": "a-lotus",
+    "author": "@alexbadm",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/a-lotus/webtoast/issues"
+        "url": "https://github.com/alexbadm/webtoast/issues"
     },
-    "homepage": "https://github.com/a-lotus/webtoast#readme"
+    "homepage": "https://github.com/alexbadm/webtoast#readme"
 }
